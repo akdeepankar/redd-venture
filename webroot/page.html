@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redd-Venture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header" style="display: flex; justify-content: space-between; align-items: center; ">
+    <div id="scoreDisplay" style="display: flex; gap: 20px;">
+        <div><p>Total Score: <span id="totalScore">0</span></p></div>
+        <div><p>Level: <span id="currentLevel">1</span>/<span id="totalLevels">10</span></p></div>
+    </div>
+    <div id="timerDisplay"><p>Time: <span id="timer">30s</span></p></div>
+</div> 
+    <div id="game-container">
+      <div id="left-column">
+        <div id="level-container"></div>
+      </div>
+      <div id="right-column" style="border: #000000 solid 1px; border-radius: 10px;">
+        <div id="question-container">
+          <h2 id="levelNumber">Level 1</h2>
+          <p id="levelQuestion">What is 2 + 2?</p>
+          <button id="checkButton">Check</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="popup" class="popup">
+      <div id="riddleContainer">
+        <div id="riddleImageContainer"></div>
+        <p id="riddle"></p>
+        <input type="text" id="riddleAnswer" placeholder="Your answer" />
+        <button id="submitAnswer">🔒 Unlock</button>
+      </div>
+    </div>
+    <script type="application/javascript" src="script.js"></script>
+  </body>
+</html>
